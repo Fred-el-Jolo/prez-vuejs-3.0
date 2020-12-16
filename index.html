@@ -130,12 +130,12 @@
 				</section>
 				<section data-background-image="images/vue-background.png">
 					<h2>Official libraries & tooling</h2>
-					<ul>
-						<li class="fragment">Vuex</li>
-						<li class="fragment">Vue router</li>
-						<li class="fragment">Vue cli</li>
-						<li class="fragment">Devtools</li>
-						<li class="fragment">Vetur</li>
+					<ul class="no-bullet">
+						<li class="fragment">♻️ Vuex</li>
+						<li class="fragment">🔀 Vue router</li>
+						<li class="fragment">🔩 Vue CLI</li>
+						<li class="fragment">🛠 Devtools</li>
+						<li class="fragment">🧱 Vetur</li>
 					</ul>
 					<aside class="notes">
 						<ul>
@@ -385,7 +385,7 @@
 							<li>Rewritten in Typescript</li>
 							<li>Modular design & tree shaking</li>
 							<li>Rewrite of virtual DOM</li>
-							<li>Smaller, faster, cleaner</li>
+							<li>🗜 Smaller, 🚀 faster, ✅cleaner</li>
 					</ul>
 					<aside class="notes">
 					</aside>
@@ -395,14 +395,19 @@
 					<ul>
 						<li>Use JS proxies</li>
 						<li>No more Object & Array detection caveats</li>
-						<li>Beware of the reactive objects that act differently depending on the context</li>
 					</ul>
 					<aside class="notes">
+						<ul>
+								<li>Beware of the reactive objects that act differently depending on the context</li>
+						</ul>
 					</aside>
 				</section>
 				<section data-background-image="images/vue-background.png">
 					<h2>Vue 3.0 - Teleport</h2>
-					<img class="r-stretch" src="images/teleport.png">
+					<div>
+						<img class="fragment hide-image" src="images/portal.jpeg">
+						<img class="fragment" src="images/teleport.png">
+					</div>
 					<aside class="notes">
 						<ul>
 							<li>Render a component elsewhere in the DOM, outside of the Vue app</li>
@@ -419,215 +424,61 @@
 						</ul>
 					</aside>
 				</section>
-				<section data-background-image="images/vue-background.png">
-					<h2>Vue 3.0 - API composition</h2>
-					<ul>
-						<li>Complex components are difficult to read</li>
-						<li>Functionalities are split appart in the component</li>
-					</ul>
-					<aside class="notes">
-						https://vue-composition-api-rfc.netlify.app/#code-organization
-						https://auth0.com/blog/getting-started-with-vue-3-composition-api/
-					</aside>
-				</section>
-				<section data-background-image="images/vue-background.png">
-					<h2>Vue 3.0 - API composition</h2>
-					<img class="r-stretch" src="images/composition-3.png">
-					<aside class="notes">
-					</aside>
-				</section>
-				<section data-background-image="images/vue-background.png">
-					<h2>Vue 3.0 - API composition</h2>
-					<img class="r-stretch" src="images/composition-2.png">
-					<aside class="notes">
-					</aside>
-				</section>
-				<section data-background-image="images/vue-background.png">
-					<h2>Vue 3.0 - API composition - Options API</h2>
-						<pre><code data-trim no-data-escape data-line-numbers>
-							<template>
-							    <div class="add">
-							        <h3>Addition Calculator</h3>
-							        <form id="sum">
-							            <input type="text" class="form-control" v-model="num1">
-							            <input type="text" class="form-control" v-model="num2">
-							            <button @click="addNumbers" type="button" class="btn btn-light">
-							                Add me!
-							            </button>
-							        </form>
-							        <p><strong>Sum:</strong> {{ sum }}</p>
-							    </div>
-							</template>
-							<script>
-							export default {
-							    name: 'Add',
-							    data() {
-							        return {
-							            num1: 0,
-							            num2: 0,
-							            sum: 0
-							        };
-							    },
-							    methods: {
-							        addNumbers: function () {
-							            this.sum = parseInt(this.num1) + parseInt(this.num2);
-							        }
-							    }
-							}
-							</script>
-							<style scoped>
-							    .add {
-							        background: #d67182;
-							        box-shadow: 1px 3px 6px #a3a3a3;
-							        padding: 50px 30px;
-							        width: 300px;
-							        text-align: center;
-							        margin: 80px auto;
-							    }
-							    p, h3 {
-							        color: #FFFFFF;
-							    }
-							    #sum {
-							        margin-top: 25px;
-							    }
-							    .form-control {
-							        margin-bottom: 15px;
-							    }
-							    .btn {
-							        margin-bottom: 30px;
-							    }
-							</style>
-					  </code></pre>
-					<aside class="notes">
+				<section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue 3.0 - Composition API</h2>
 						<ul>
-							<li>Reactive data in the data() function</li>
-							<li>AddNumbers() function registered within methods</li>
-							<li>Use of this</li>
+							<li>Complex components are difficult to read</li>
+							<li>Functionalities are split appart in the component</li>
 						</ul>
-					</aside>
-				</section>
-				<section data-background-image="images/vue-background.png">
-					<h2>Vue 3.0 - Composition API</h2>
-						<pre><code data-trim no-data-escape data-line-numbers>
-							<template>
-							    <div class="add">
-							        <h3>Addition Calculator</h3>
-							        <form id="sumComp">
-							            <input type="text" class="form-control" v-model="num1">
-							            <input type="text" class="form-control" v-model="num2">
-							            <button @click="addNumbers" type="button" class="btn btn-light">
-							            Add me!
-							        </button>
-							        </form>
-							        <p><strong>Sum:</strong> {{ sum }}</p>
-							    </div>
-							</template>
-							<script>
-							import { ref } from '@vue/composition-api';
+						<aside class="notes">
+							https://vue-composition-api-rfc.netlify.app/#code-organization
+							https://auth0.com/blog/getting-started-with-vue-3-composition-api/
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue 3.0 - Composition API</h2>
+						<img class="r-stretch" src="images/composition-3.png">
+						<aside class="notes">
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue 3.0 - Composition API</h2>
+						<ul>
+							<li>setup function</li>
+						</ul>
+						<pre><code data-trim no-data-escape data-line-numbers="2-11">
 							export default {
-							    name: 'AddComposition',
-							    setup() {
-							        let num1 = ref(0);
-							        let num2 = ref(0);
-							        let sum = ref(0);
-							        function addNumbers() {
-							            sum.value = parseInt(num1.value) + parseInt(num2.value);
-							        }
-							        return {
-							            num1,
-							            num2,
-							            sum,
-							            addNumbers
-							        }
-							    }
+							  setup(props, context) {
+							    // Attributes (Non-reactive object)
+							    console.log(context.attrs)
+
+							    // Slots (Non-reactive object)
+							    console.log(context.slots)
+
+							    // Emit Events (Method)
+							    console.log(context.emit)
+							  }
 							}
-							</script>
-							<style scoped>
-							    .add {
-							        background: #d67182;
-							        box-shadow: 1px 3px 6px #a3a3a3;
-							        padding: 50px 30px;
-							        width: 300px;
-							        text-align: center;
-							        margin: 80px auto;
-							    }
-							    p, h3 {
-							        color: #FFFFFF;
-							    }
-							    #sum {
-							        margin-top: 25px;
-							    }
-							    .form-control {
-							        margin-bottom: 15px;
-							    }
-							    .btn {
-							        margin-bottom: 30px;
-							    }
-							</style>
 					  </code></pre>
-					<aside class="notes">
-					</aside>
-				</section>
-				<section data-background-image="images/vue-background.png">
-					<h2>Vue 3.0 - Composition API</h2>
-					<ul>
-						<li>setup function</li>
-					</ul>
-					<pre><code data-trim no-data-escape data-line-numbers="2-11">
-						export default {
-						  setup(props, context) {
-						    // Attributes (Non-reactive object)
-						    console.log(context.attrs)
+						<aside class="notes">
+							No this
 
-						    // Slots (Non-reactive object)
-						    console.log(context.slots)
-
-						    // Emit Events (Method)
-						    console.log(context.emit)
-						  }
-						}
-				  </code></pre>
-					<aside class="notes">
-						No this
-
-					</aside>
-				</section>
-				<section data-background-image="images/vue-background.png">
-					<h2>Vue 3.0 - Composition API</h2>
-					<ul>
-						<li>Make variable reactive</li>
-					</ul>
-					<pre><code data-trim no-data-escape data-line-numbers="2-4">
-						setup() {
-						    let num1 = ref(0);
-						    let num2 = ref(0);
-						    let sum = ref(0);
-						    function addNumbers() {
-						        sum.value = parseInt(num1.value) + parseInt(num2.value);
-						    }
-						    return {
-						        num1,
-						        num2,
-						        sum,
-						        addNumbers
-						    }
-						}
-				  </code></pre>
-					<aside class="notes">
-						Wrapping values inside an object might seem unnecessary but is required to keep the behavior unified across different data types in JavaScript. That’s because in JavaScript, primitive types like Number or String are passed by value, not by reference:
-					</aside>
-				</section>
-				<section data-background-image="images/vue-background.png">
-					<h2>Vue 3.0 - Composition API</h2>
-					<ul>
-						<li>Computed</li>
-						<pre><code data-trim no-data-escape data-line-numbers="4-6">
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue 3.0 - Composition API</h2>
+						<ul>
+							<li>Make variable reactive</li>
+						</ul>
+						<pre><code data-trim no-data-escape data-line-numbers="2-4">
 							setup() {
 							    let num1 = ref(0);
 							    let num2 = ref(0);
-							    let sum = computed(() => {
-							    	return parseInt(num1.value) + parseInt(num2.value);
-							    });
+							    let sum = ref(0);
+							    function addNumbers() {
+							        sum.value = parseInt(num1.value) + parseInt(num2.value);
+							    }
 							    return {
 							        num1,
 							        num2,
@@ -636,78 +487,103 @@
 							    }
 							}
 					  </code></pre>
-					</ul>
-					<aside class="notes">
-					</aside>
-				</section>
-				<section data-background-image="images/vue-background.png">
-					<h2>Vue 3.0 - Composition API</h2>
-					<ul>
-						<li>Lifecycle hooks</li>
-					</ul>
-					<pre><code data-trim no-data-escape data-line-numbers="7">
-						setup (props) {
-						  const repositories = ref([])
-						  const getUserRepositories = async () => {
-						    repositories.value = await fetchUserRepositories(props.user)
-						  }
+						<aside class="notes">
+							Wrapping values inside an object might seem unnecessary but is required to keep the behavior unified across different data types in JavaScript. That’s because in JavaScript, primitive types like Number or String are passed by value, not by reference:
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue 3.0 - Composition API</h2>
+						<ul>
+							<li>Computed</li>
+							<pre><code data-trim no-data-escape data-line-numbers="4-6">
+								setup() {
+								    let num1 = ref(0);
+								    let num2 = ref(0);
+								    let sum = computed(() => {
+								    	return parseInt(num1.value) + parseInt(num2.value);
+								    });
+								    return {
+								        num1,
+								        num2,
+								        sum,
+								        addNumbers
+								    }
+								}
+						  </code></pre>
+						</ul>
+						<aside class="notes">
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue 3.0 - Composition API</h2>
+						<ul>
+							<li>Lifecycle hooks</li>
+						</ul>
+						<pre><code data-trim no-data-escape data-line-numbers="7">
+							setup (props) {
+							  const repositories = ref([])
+							  const getUserRepositories = async () => {
+							    repositories.value = await fetchUserRepositories(props.user)
+							  }
 
-						  onMounted(getUserRepositories) // on `mounted` call `getUserRepositories`
+							  onMounted(getUserRepositories) // on `mounted` call `getUserRepositories`
 
-						  return {
-						    repositories,
-						    getUserRepositories
-						  }
-						}
-				  </code></pre>
+							  return {
+							    repositories,
+							    getUserRepositories
+							  }
+							}
+					  </code></pre>
 
-					<aside class="notes">
-					</aside>
-				</section>
-				<section data-background-image="images/vue-background.png">
-					<h2>Vue 3.0 - Composition API</h2>
-					<ul>
-						<li>Watch</li>
-					</ul>
-					<pre><code data-trim no-data-escape data-line-numbers="13-14">
-						setup (props) {
-						  // using `toRefs` to create a Reactive Reference to the `user` property of props
-						  const { user } = toRefs(props)
+						<aside class="notes">
+							<ul>
+								<li>No created / beforeCreate hooks, just do it in setup !!!</li>
+							</ul>
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue 3.0 - Composition API</h2>
+						<ul>
+							<li>Watch</li>
+						</ul>
+						<pre><code data-trim no-data-escape data-line-numbers="7">
+							setup (props) {
+							  const repositories = ref([]);
+							  const getUserRepositories = async () => {
+							    repositories.value = await fetchUserRepositories(props.user)
+							  };
 
-						  const repositories = ref([])
-						  const getUserRepositories = async () => {
-						    // update `props.user` to `user.value` to access the Reference value
-						    repositories.value = await fetchUserRepositories(user.value)
-						  }
+							  watch(user, getUserRepositories);
 
-						  onMounted(getUserRepositories)
-
-						  // set a watcher on the Reactive Reference to user prop
-						  watch(user, getUserRepositories)
-
-						  return {
-						    repositories,
-						    getUserRepositories
-						  }
-						}
-					</code></pre>
-					<aside class="notes">
-					</aside>
-				</section>
-				<section data-background-image="images/vue-background.png">
-					<h2>Vue 3.0 - API composition - </h2>
-					<ul>
-							<li>Cleaner</li>
-							<li>Code not split appart</li>
-							<li>Ability to extract snippets to file</li>
-							<li>Only one method, setup</li>
-							<li>Can be messy</li>
-					</ul>
-					<aside class="notes">
-					</aside>
+							  return {
+							    repositories,
+							    getUserRepositories
+							  }
+							}
+						</code></pre>
+						<aside class="notes">
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue 3.0 - API composition - </h2>
+						<ul>
+								<li>Cleaner</li>
+								<li>Code not split appart</li>
+								<li>Ability to extract snippets to file</li>
+								<li>Only one method: setup</li>
+								<li>⚠️Can still be messy</li>
+						</ul>
+						<aside class="notes">
+						</aside>
+					</section>
 				</section>
 				<section data-background-image="images/vue-background.png">
 					<h2>Questions ?</h2>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>After-talk party 🎉 🎊</h2>
+					<p style="font-weight: 600;">https://www.wonder.me/r?id=pr6lfs-ewo98</p>
+					<p style="font-weight: 600;">jssophia-returns!</p>
 				</section>
 
 			</div>
