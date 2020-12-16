@@ -1,0 +1,56 @@
+.reveal.small-bullet ul, ul.small-bullet {
+  margin-left: 0;
+  list-style: none;
+
+  & li {
+    padding-left: 1em;
+    position: relative;
+
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+.reveal ul.check-bullet {
+  margin-left: 0;
+  list-style: none;
+
+  & li {
+    padding-left: 1em;
+    position: relative;
+
+    &::before {
+      color: #7bb526;
+      content: "✔";
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+.reveal ul.cross-bullet {
+  margin-left: 0;
+  list-style: none;
+
+  & li {
+    padding-left: 1em;
+    position: relative;
+
+    &::before {
+      color: #f32c22;
+      content: "✖";
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+.fragment.hide-image.visible:not(.current-fragment) {
+    display: none;
+    height:0px;
+    line-height: 0px;
+    font-size: 0px;
+}

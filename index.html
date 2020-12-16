@@ -8,47 +8,708 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
+		<!--link rel="stylesheet" href="dist/theme/beige.css" id="theme">
 		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/blood.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/league.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/night.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/serif.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/simple.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/solarized.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme"-->
+
+<link rel="stylesheet" href="dist/theme/white.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 	</head>
 	<body>
-		<div class="reveal">
+		<div class="reveal small-bullet">
 			<div class="slides">
 				<section>
+				  <h3 class="r-fit-text">Bienvenue à <img src="images/JSSophia.svg" width="100" style="vertical-align: middle;margin-top: .0em;margin-left: .3em"/></h3>
+				  <p>#8 - 16 Décembre 2020</p>
+				  
+				</section>
+				<section data-background-image="images/JSSophia.svg" data-background-size="100px" data-background-position="top 2rem left 2rem" data-background-opacity=".8">
+				  <img class="r-stretch" src="images/2020_happy.png">
+				</section>
+				<section data-background-image="images/JSSophia.svg" data-background-size="100px" data-background-position="top 2rem left 2rem" data-background-opacity=".8">
+				  <img class="r-stretch" src="images/2020.png">
+				</section>
+				<section data-background-image="images/JSSophia.svg" data-background-size="100px" data-background-position="top 2rem left 2rem" data-background-opacity=".8">
+				  <h3>Merci à notre sponsor (Meetup)</h3>
+				  <img src="images/telemaque.png">
+				</section>
+				<section data-background-image="images/JSSophia.svg" data-background-size="100px" data-background-position="top 2rem left 2rem" data-background-opacity=".8">
+				  <h3>Speakers needed !!!!!</h3>
+			  	<img src="images/speaker-1.png" height="250">
+			  	<img src="images/speaker-2.png" height="250">
+			  	<div style="display: flex; justify-content: space-around;">
+			  		<span style="font-weight: 600;">contact@jssophia.io</span><span style="font-weight: 600;">https://jssophia.io</span>
+			  	</div>
+				</section>
+				<section data-background-image="images/JSSophia.svg" data-background-size="100px" data-background-position="top 2rem left 2rem" data-background-opacity=".8">
+				  <h3>Code de conduite</h3>
+				  <img src="images/coc.png">
+				  <p style="font-weight: 600;">https://jssophia.io/coc.html</p>
+				</section>
+				<section data-background-image="images/JSSophia.svg" data-background-size="100px" data-background-position="top 2rem left 2rem" data-background-opacity=".8">
+				  <h3>JSSophia, la team</h3>
+				  <img src="images/team.png">
+				  <div style="display: flex; justify-content: space-around;">
+				  	<span style="font-weight: 600;">contact@jssophia.io</span><span style="font-weight: 600;">https://jssophia.io</span>
+				  </div>
+				</section>
+				<section data-background-image="images/vue-background.png">
 				  <h3>Introduction to Vue.js - 3.0 </h3>
-				  <p>JS Sophia - 2nd December, 2020</p>
+				  <p>JS Sophia - 16th December, 2020</p>
+				  <img class="r-stretch" src="images/logo-vue.png"/>
 				  <p style="display: flex; justify-content: center;align-items: center">
 				    <small>By <a href="https://twitter.com/fredGuillaume">Fred GUILLAUME</a></small>
-				    <img src="images/avatar.png" width="150"/>
-
+				    <img src="images/avatar.png" width="100"/>
 				  </p>
-				  <img src="/images/slds_spinner_brand.gif" alt="" class="spinner-fred">
+				  <p style="display: flex; justify-content: center;align-items: center">
+				    <small>Senior javascript developer @<a href="https://fr.planisware.com/">Planisware</a></small>
+				    &nbsp;
+				    <img src="images/logo-plw.png" width="60" style="margin-left: .4em;"/>
+				  </p>
 				</section>
-				<section>
+				<section data-background-image="images/vue-background.png">
 					<h2>What is Vue.js</h2>
-					<ul class="small-bullet">
-					  <li class="fragment">Popular JS framework</li>
+					<ul>
+					  <li class="fragment">Popular JS "progressive framework"</li>
+					  <li class="fragment">MV-VM</li>
 					  <li class="fragment">Competitors: React, Angular, Svelte...</li>
 					  <li class="fragment">Created in 2013-2014</li>
-					  <li class="fragment">
-					  	Pros
-					  	<ul>
-					  		<li class="fragment">Simple learning curve</li>
-					  		<li class="fragment">Documentation</li>
-					  		<li class="fragment">Single file components</li>
-					  	</ul>
-						</li>
 					</ul>
+					<aside class="notes">
+						https://stackoverflow.com/questions/5421874/basic-concepts-of-mvvm-what-should-a-viewmodel-do
+						Model layer => Domain's data (VueX)
+						View-Model layer => GUI application Data
+						View layer => dumb GUI
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Pros</h2>
+			  	<ul class="check-bullet">
+			  		<li class="fragment">Not backed by a GAFA</li>
+			  		<li class="fragment">Simple learning curve</li>
+			  		<li class="fragment">Documentation</li>
+			  		<li class="fragment">Single file components</li>
+			  		<li class="fragment">Official libraries & tools</li>
+			  	</ul>
+			  	<aside class="notes">
+			  		<ul>
+			  			<li>Needs to be relevant & popular</li>
+			  			<li>In between React & Angular</li>
+			  			<li>Even a style guide !!!</li>
+			  			<li>Refs
+			  				<ul>
+			  					<li>https://hswolff.com/blog/what-vuejs-does-better-than-react/</li>
+			  	  			<li>https://about.gitlab.com/blog/2016/10/20/why-we-chose-vue/</li>
+			  				</ul>
+			  			</li>
+			  		</ul>
+			  		color palette : https://colorpalettes.net/color-palette-2384/
+			  	</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Cons</h2>
+			  	<ul class="cross-bullet">
+			  		<li class="fragment">Language barrier (chinese)</li>
+			  		<li class="fragment">Small community</li>
+			  		<li class="fragment">Young technology - prod efficiency</li>
+			  	</ul>
+			  	<aside class="notes">
+			  	  https://hswolff.com/blog/things-i-dont-like-about-vuejs-as-a-react-engineer/
+			  	  color palette : https://colorpalettes.net/color-palette-2384/
+			  	</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Official libraries & tooling</h2>
+					<ul>
+						<li class="fragment">Vuex</li>
+						<li class="fragment">Vue router</li>
+						<li class="fragment">Vue cli</li>
+						<li class="fragment">Devtools</li>
+						<li class="fragment">Vetur</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Vuex: state management library (Flux)</li>
+							<li>Vue router: routing</li>
+							<li>Vue cli: std & useful tools for Vue.js development</li>
+							<li>Devtools in browsers</li>
+							<li>Vetur: Vs code extension</li>
+						</ul>
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue.js Basics - Components communication</h2>
+					<ul>
+						<li class="fragment">Props down, events up</li>
+						<li class="fragment">Everything else is "private to the component"</li>
+					</ul>
+					<img class="r-stretch" src="images/props-events.png">
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue.js Basics - Lifecycle</h2>
+					<div style="float: right; width: 50%">
+						<img src="images/lifecycle-1.png" class="r-frame fragment hide-image" data-fragment-index="3">
+						<img src="images/lifecycle-2.png" class="r-frame fragment hide-image" data-fragment-index="6">
+						<img src="images/lifecycle-3.png" class="r-frame fragment hide-image" data-fragment-index="9">
+						<img src="images/lifecycle-4.png" class="r-frame fragment hide-image" data-fragment-index="12">
+					</div>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Before create</li>
+						<li class="fragment" data-fragment-index="2">Created</li>
+						<li class="fragment" data-fragment-index="4">Before mount</li>
+						<li class="fragment" data-fragment-index="5">Mounted</li>
+						<li class="fragment" data-fragment-index="7">Before update</li>
+						<li class="fragment" data-fragment-index="8">Updated</li>
+						<li class="fragment" data-fragment-index="10">Before unmount</li>
+						<li class="fragment" data-fragment-index="11">Unmounted</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Created: instance created - injections & reactivity set</li>
+							<li>Mounted: component rendered</li>
+							<li>Updated: data changed</li>
+							<li>unmount: component removed</li>
+						</ul>
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue.js Basics - Lifecycle</h2>
+					<img class="r-stretch" src="images/lifecycle.png">
+					<aside class="notes">
+						<ul>
+							<li>Created: instance created - injections & reactivity set</li>
+							<li>Mounted: component rendered</li>
+							<li>Updated: data changed</li>
+							<li>unmount: component removed</li>
+						</ul>
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue.js Basics - Reactivity</h2>
+					<img class="r-stretch" src="images/reactivity.png">
+					<aside class="notes">
+						<ul>
+							<li>Vue reactivity system registers data used during rendering. Later when a setter is triggered, a watcher is triggered which causes the component to re-render</li>
+							<li>Changes on objects & arrays cannot be detected and necessitate specific paterns</li>
+						</ul>
+					</aside>
 				</section>
 				<section>
-					<h2>Architecture</h2>
-					<ul>
-						<li></li>
-					</ul>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Single file components</h2>
+						  <pre><code data-trim no-data-escape data-line-numbers="1-3|5-13|15-19">
+						  	<template>
+						  	  <div class="hello">Hi {{ name }} {{ fullName }}</div>
+						  	</template>
+
+						  	<script>
+						  	export default {
+						  	  name: "HelloWorld",
+						  	  props: {
+						  	    name: String,
+						  	    fullName: String,
+						  	  },
+						  	};
+						  	</script>
+
+						  	<style scoped>
+						  	.hello {
+						  	  font-weight: bold;
+						  	}
+						  	</style>
+						  </code></pre>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Props</h2>
+						<img class="r-stretch" src="images/props-1.png">
+						<!--pre><code class="vue" data-trim no-data-escape data-line-numbers>
+							<template>
+							  &lt;hello-user
+							    name="Fred"
+							    familyName="GUILLAUME"
+							    :user="{ name: 'Fred', meetup: 'JSSophia' }"
+							  />
+							</template>
+						</code></pre-->
+						<aside class="notes">
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Props</h2>
+						<img class="r-stretch" src="images/props-2.png">
+						<!--pre><code data-trim no-data-escape data-line-numbers>
+						  props: {
+						    name: String,
+						    fullName: String,
+						    user: {
+						      type: Object,
+						      default: {},
+						    },
+						  },
+						</code></pre-->
+						<aside class="notes">
+						</aside>
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Events</h2>
+						<img class="r-stretch" src="images/events-1.png">
+						<aside class="notes">
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Events</h2>
+						<img class="r-stretch" src="images/events-2.png">
+						<aside class="notes">
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Data</h2>
+						<img class="r-stretch" src="images/data.png">
+						<aside class="notes">
+							<ul>
+								<li>Internal component state</li>
+								<li>Must return a function</li>
+								<li>Created by reference & shared amongst all instances</li>
+							</ul>
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Computed</h2>
+						<img class="r-stretch" src="images/computed.png">
+						<aside class="notes">
+							<ul>
+								<li>Reactive</li>
+								<li>Cached & re-computed on dependency change</li>
+							</ul>
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Methods</h2>
+						<img class="r-stretch" src="images/methods.png">
+						<aside class="notes">
+							<ul>
+								<li>>No cache, evaluated at each call</li>
+							</ul>
+							
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Watchers</h2>
+						<img class="r-stretch" src="images/watch.png">
+						<aside class="notes">
+							<ul>
+								<li>Specific action on data change</li>
+							</ul>
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Directives</h2>
+						<ul>
+							<li>v-html</li>
+						</ul>
+						<img class="r-stretch" src="images/v-html.png">
+						<aside class="notes">
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Directives</h2>
+						<ul>
+							<li>v-if</li>
+						</ul>
+						<img class="r-stretch" src="images/v-if.png">
+						<aside class="notes">
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Directives</h2>
+						<ul>
+							<li>v-show</li>
+						</ul>
+						<img class="r-stretch" src="images/v-show.png">
+						<aside class="notes">
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Directives</h2>
+						<ul>
+							<li>v-for</li>
+						</ul>
+						<img class="r-stretch" src="images/v-for.png">
+						<aside class="notes">
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Directives</h2>
+						<ul>
+							<li>v-model</li>
+						</ul>
+						<img class="r-stretch" src="images/v-model-1.png">
+						<aside class="notes">
+						</aside>
+					</section>
+					<section data-background-image="images/vue-background.png">
+						<h2>Vue.js Basics - Slots</h2>
+						<img class="r-stretch" src="images/slots.png">
+						<aside class="notes">
+						</aside>
+					</section>
 				</section>
-				<section>Slide 2</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 what's new</h2>
+					<ul>
+						<li>Released on the 18th of september, 2020</li>
+						<li>Currently in @Next distribution tag</li>
+						<li>Stable core</li>
+						<li>Official libraries / sub-projects support ongoing</li>
+					</ul>
+					<aside class="notes">
+					  https://increment.com/frontend/making-vue-3/?ref=madewithvuejs.com
+					</aside>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - Performances</h2>
+					<ul>
+							<li>Rewritten in Typescript</li>
+							<li>Modular design & tree shaking</li>
+							<li>Rewrite of virtual DOM</li>
+							<li>Smaller, faster, cleaner</li>
+					</ul>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - Reactivity</h2>
+					<ul>
+						<li>Use JS proxies</li>
+						<li>No more Object & Array detection caveats</li>
+						<li>Beware of the reactive objects that act differently depending on the context</li>
+					</ul>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - Teleport</h2>
+					<img class="r-stretch" src="images/teleport.png">
+					<aside class="notes">
+						<ul>
+							<li>Render a component elsewhere in the DOM, outside of the Vue app</li>
+							<li>Useful for specific edge cases</li>
+						</ul>
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - fragments</h2>
+					<img class="r-stretch" src="images/fragments.png">
+					<aside class="notes">
+						<ul>
+							<li>Multi-root component (=)</li>
+						</ul>
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - API composition</h2>
+					<ul>
+						<li>Complex components are difficult to read</li>
+						<li>Functionalities are split appart in the component</li>
+					</ul>
+					<aside class="notes">
+						https://vue-composition-api-rfc.netlify.app/#code-organization
+						https://auth0.com/blog/getting-started-with-vue-3-composition-api/
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - API composition</h2>
+					<img class="r-stretch" src="images/composition-3.png">
+					<aside class="notes">
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - API composition</h2>
+					<img class="r-stretch" src="images/composition-2.png">
+					<aside class="notes">
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - API composition - Options API</h2>
+						<pre><code data-trim no-data-escape data-line-numbers>
+							<template>
+							    <div class="add">
+							        <h3>Addition Calculator</h3>
+							        <form id="sum">
+							            <input type="text" class="form-control" v-model="num1">
+							            <input type="text" class="form-control" v-model="num2">
+							            <button @click="addNumbers" type="button" class="btn btn-light">
+							                Add me!
+							            </button>
+							        </form>
+							        <p><strong>Sum:</strong> {{ sum }}</p>
+							    </div>
+							</template>
+							<script>
+							export default {
+							    name: 'Add',
+							    data() {
+							        return {
+							            num1: 0,
+							            num2: 0,
+							            sum: 0
+							        };
+							    },
+							    methods: {
+							        addNumbers: function () {
+							            this.sum = parseInt(this.num1) + parseInt(this.num2);
+							        }
+							    }
+							}
+							</script>
+							<style scoped>
+							    .add {
+							        background: #d67182;
+							        box-shadow: 1px 3px 6px #a3a3a3;
+							        padding: 50px 30px;
+							        width: 300px;
+							        text-align: center;
+							        margin: 80px auto;
+							    }
+							    p, h3 {
+							        color: #FFFFFF;
+							    }
+							    #sum {
+							        margin-top: 25px;
+							    }
+							    .form-control {
+							        margin-bottom: 15px;
+							    }
+							    .btn {
+							        margin-bottom: 30px;
+							    }
+							</style>
+					  </code></pre>
+					<aside class="notes">
+						<ul>
+							<li>Reactive data in the data() function</li>
+							<li>AddNumbers() function registered within methods</li>
+							<li>Use of this</li>
+						</ul>
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - Composition API</h2>
+						<pre><code data-trim no-data-escape data-line-numbers>
+							<template>
+							    <div class="add">
+							        <h3>Addition Calculator</h3>
+							        <form id="sumComp">
+							            <input type="text" class="form-control" v-model="num1">
+							            <input type="text" class="form-control" v-model="num2">
+							            <button @click="addNumbers" type="button" class="btn btn-light">
+							            Add me!
+							        </button>
+							        </form>
+							        <p><strong>Sum:</strong> {{ sum }}</p>
+							    </div>
+							</template>
+							<script>
+							import { ref } from '@vue/composition-api';
+							export default {
+							    name: 'AddComposition',
+							    setup() {
+							        let num1 = ref(0);
+							        let num2 = ref(0);
+							        let sum = ref(0);
+							        function addNumbers() {
+							            sum.value = parseInt(num1.value) + parseInt(num2.value);
+							        }
+							        return {
+							            num1,
+							            num2,
+							            sum,
+							            addNumbers
+							        }
+							    }
+							}
+							</script>
+							<style scoped>
+							    .add {
+							        background: #d67182;
+							        box-shadow: 1px 3px 6px #a3a3a3;
+							        padding: 50px 30px;
+							        width: 300px;
+							        text-align: center;
+							        margin: 80px auto;
+							    }
+							    p, h3 {
+							        color: #FFFFFF;
+							    }
+							    #sum {
+							        margin-top: 25px;
+							    }
+							    .form-control {
+							        margin-bottom: 15px;
+							    }
+							    .btn {
+							        margin-bottom: 30px;
+							    }
+							</style>
+					  </code></pre>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - Composition API</h2>
+					<ul>
+						<li>setup function</li>
+					</ul>
+					<pre><code data-trim no-data-escape data-line-numbers="2-11">
+						export default {
+						  setup(props, context) {
+						    // Attributes (Non-reactive object)
+						    console.log(context.attrs)
+
+						    // Slots (Non-reactive object)
+						    console.log(context.slots)
+
+						    // Emit Events (Method)
+						    console.log(context.emit)
+						  }
+						}
+				  </code></pre>
+					<aside class="notes">
+						No this
+
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - Composition API</h2>
+					<ul>
+						<li>Make variable reactive</li>
+					</ul>
+					<pre><code data-trim no-data-escape data-line-numbers="2-4">
+						setup() {
+						    let num1 = ref(0);
+						    let num2 = ref(0);
+						    let sum = ref(0);
+						    function addNumbers() {
+						        sum.value = parseInt(num1.value) + parseInt(num2.value);
+						    }
+						    return {
+						        num1,
+						        num2,
+						        sum,
+						        addNumbers
+						    }
+						}
+				  </code></pre>
+					<aside class="notes">
+						Wrapping values inside an object might seem unnecessary but is required to keep the behavior unified across different data types in JavaScript. That’s because in JavaScript, primitive types like Number or String are passed by value, not by reference:
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - Composition API</h2>
+					<ul>
+						<li>Computed</li>
+						<pre><code data-trim no-data-escape data-line-numbers="4-6">
+							setup() {
+							    let num1 = ref(0);
+							    let num2 = ref(0);
+							    let sum = computed(() => {
+							    	return parseInt(num1.value) + parseInt(num2.value);
+							    });
+							    return {
+							        num1,
+							        num2,
+							        sum,
+							        addNumbers
+							    }
+							}
+					  </code></pre>
+					</ul>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - Composition API</h2>
+					<ul>
+						<li>Lifecycle hooks</li>
+					</ul>
+					<pre><code data-trim no-data-escape data-line-numbers="7">
+						setup (props) {
+						  const repositories = ref([])
+						  const getUserRepositories = async () => {
+						    repositories.value = await fetchUserRepositories(props.user)
+						  }
+
+						  onMounted(getUserRepositories) // on `mounted` call `getUserRepositories`
+
+						  return {
+						    repositories,
+						    getUserRepositories
+						  }
+						}
+				  </code></pre>
+
+					<aside class="notes">
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - Composition API</h2>
+					<ul>
+						<li>Watch</li>
+					</ul>
+					<pre><code data-trim no-data-escape data-line-numbers="13-14">
+						setup (props) {
+						  // using `toRefs` to create a Reactive Reference to the `user` property of props
+						  const { user } = toRefs(props)
+
+						  const repositories = ref([])
+						  const getUserRepositories = async () => {
+						    // update `props.user` to `user.value` to access the Reference value
+						    repositories.value = await fetchUserRepositories(user.value)
+						  }
+
+						  onMounted(getUserRepositories)
+
+						  // set a watcher on the Reactive Reference to user prop
+						  watch(user, getUserRepositories)
+
+						  return {
+						    repositories,
+						    getUserRepositories
+						  }
+						}
+					</code></pre>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Vue 3.0 - API composition - </h2>
+					<ul>
+							<li>Cleaner</li>
+							<li>Code not split appart</li>
+							<li>Ability to extract snippets to file</li>
+							<li>Only one method, setup</li>
+							<li>Can be messy</li>
+					</ul>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section data-background-image="images/vue-background.png">
+					<h2>Questions ?</h2>
+				</section>
+
 			</div>
 		</div>
 
@@ -56,16 +717,28 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/highlightjs-vue"></script>
+		
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				backgroundTransition: 'none',
+				slideNumber: 'c',
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
+
+			RevealHighlight().hljs.registerLanguage('vue', window.hljsDefineVue);
+			RevealHighlight().hljs.configure({
+			  languages: ['vue', 'html', 'javascript']
+			});
+			RevealHighlight().hljs.initHighlightingOnLoad();
+
 		</script>
 	</body>
 </html>
